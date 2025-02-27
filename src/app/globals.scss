@@ -35,6 +35,10 @@ a {
   text-decoration: none;
 }
 
+.monoSpaced {
+  font-family: var(--font-anonymous-pro);
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
