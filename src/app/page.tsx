@@ -97,7 +97,6 @@ export default function Home() {
                   alt="Competition Ben"
                   width="250"
                   height="250"
-                  priority
               />
               <Image
                   className={styles.canes}
@@ -105,7 +104,6 @@ export default function Home() {
                   alt="Canes Ben"
                   width="300"
                   height="300"
-                  priority
               />
               <Image
                   className={styles.stop}
@@ -113,7 +111,44 @@ export default function Home() {
                   alt="Fashion Ben"
                   width="300"
                   height="300"
-                  priority
+              />
+            </div>
+            <div className={styles.circle}>
+
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.projects}>
+          <h2>
+            Projects
+          </h2>
+          <div className={styles.content}>
+            <div className={styles.project}>
+              <div className={styles.info}>
+                <h3>b3njam1n.com</h3>
+                A responsive personal portfolio website built on Next.js <br/>
+                <Image
+                  className={styles.icon}
+                  src="/github-round.svg"
+                  alt="Github Link"
+                  width="35"
+                  height="35"
+                />
+                <Image
+                  className={styles.icon}
+                  src="/globe.svg"
+                  alt="Website Link"
+                  width="35"
+                  height="35"
+                />
+              </div>
+              <Image
+                className={styles.image}
+                src="/project-pics/website.png"
+                alt="Website Prototype"
+                width="1000"
+                height="1000"
               />
             </div>
           </div>
