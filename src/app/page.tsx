@@ -75,8 +75,46 @@ export default function Home() {
             About
           </h2>
           <div className={styles.content}>
-            <div>
-              Hello, World!,
+            <div className={styles.story}>
+              <span>Hello, World!</span> My name is Ben. I’m a professional full-stack
+              software engineer currently based out of Houston, TX with degrees in computer
+              science and business administration from the University of Georgia.
+              <br/><br/>
+              Much of my experience thus far has been working with clients in the energy,
+              professional services, and fast food sectors. I also have experience in residential
+              real estate and have a Georgia real estate license!
+              <br/><br/>
+              In my spare time, I really enjoy working on projects (like this website!),
+              making music, visiting new restaurants, and training Brazilian Jiu Jitsu.
+              I’m also tangentially interested in fashion and hospitality.
+              <br/><br/>
+              <button>Download My Resume</button>
+            </div>
+            <div className={styles.pics}>
+              <Image
+                  className={styles.comp}
+                  src="/ben-pics/comp.jpg"
+                  alt="Competition Ben"
+                  width="250"
+                  height="250"
+                  priority
+              />
+              <Image
+                  className={styles.canes}
+                  src="/ben-pics/canes.jpg"
+                  alt="Canes Ben"
+                  width="300"
+                  height="300"
+                  priority
+              />
+              <Image
+                  className={styles.stop}
+                  src="/ben-pics/stop.jpg"
+                  alt="Fashion Ben"
+                  width="300"
+                  height="300"
+                  priority
+              />
             </div>
           </div>
         </div>

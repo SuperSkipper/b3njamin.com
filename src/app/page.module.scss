@@ -97,10 +97,12 @@
 
   .about {
     scroll-snap-align: start;
-    min-height: 100vh;
+    height: 100vh;
     padding: 100px;
+    position: relative;
     h2 {
-      position: relative;
+      position: absolute;
+      top: 150px;
       width: fit-content;
       font-family: var(--font-anonymous-pro), serif;
       font-size: 60px;
@@ -109,7 +111,44 @@
       background-image: -webkit-linear-gradient(0deg,  rgba(11,227,0,1) 0%, rgba(0,71,202,1) 100%);
     }
     .content {
-      display: flex;
+      height: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-left: 40px;
+      align-items: center;
+      .story {
+        font-size: 20px;
+        font-family: var(--font-montserrat), serif;
+        font-weight: normal;
+        span {
+          font-size: 40px;
+        }
+        button {
+          font-size: 30px;
+          font-weight: lighter;
+          background-color: transparent;
+          padding: 10px 30px;
+          margin-top: 20px;
+          border: 1px solid #ededed;
+          border-radius: 50px;
+        }
+      }
+      .pics {
+        position: relative;
+        & * {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+        }
+        .comp {
+          transform: translate(20%, -50%)
+        }
+        .stop {
+          transform: translate(-50%, 30%)
+        }
+
+      }
     }
   }
 }
