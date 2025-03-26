@@ -151,6 +151,26 @@ export default function Home() {
                 height="1000"
               />
             </div>
+            <div className={styles.project}>
+              <div className={styles.info}>
+                <h3>Soundcloud</h3>
+                 <br/>
+                <Image
+                    className={styles.icon}
+                    src="/globe.svg"
+                    alt="Website Link"
+                    width="35"
+                    height="35"
+                />
+              </div>
+              <Image
+                  className={styles.image}
+                  src="/project-pics/soundcloud.png"
+                  alt="Website Prototype"
+                  width="1000"
+                  height="1000"
+              />
+            </div>
           </div>
         </div>
       </main>
