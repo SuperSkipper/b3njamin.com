@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.scss";
 import { Anonymous_Pro, Montserrat } from 'next/font/google';
+import React from "react";
 
 const anonymous_pro = Anonymous_Pro({
   weight: ['400', '700'],
@@ -39,21 +40,21 @@ export default function Home() {
           </div>
           <div className={styles.socials}>
             <Image
-                src="/linkedin.svg"
+                src="/icons/linkedin.svg"
                 alt="Linkedin logo"
                 width="50"
                 height="50"
                 priority
             />
             <Image
-                src="/github.svg"
+                src="/icons/github.svg"
                 alt="Github logo"
                 width="50"
                 height="50"
                 priority
             />
             <Image
-                src="/instagram.svg"
+                src="/icons/instagram.svg"
                 alt="Instagram logo"
                 width="50"
                 height="50"
@@ -130,14 +131,14 @@ export default function Home() {
                 A responsive personal portfolio website built on Next.js <br/>
                 <Image
                   className={styles.icon}
-                  src="/github-round.svg"
+                  src="/icons/github-round.svg"
                   alt="Github Link"
                   width="35"
                   height="35"
                 />
                 <Image
                   className={styles.icon}
-                  src="/globe.svg"
+                  src="/icons/globe.svg"
                   alt="Website Link"
                   width="35"
                   height="35"
@@ -154,10 +155,11 @@ export default function Home() {
             <div className={styles.project}>
               <div className={styles.info}>
                 <h3>Soundcloud</h3>
+                Some beeps and boops I&#39;ve written over the years
                  <br/>
                 <Image
                     className={styles.icon}
-                    src="/globe.svg"
+                    src="/icons/globe.svg"
                     alt="Website Link"
                     width="35"
                     height="35"
@@ -172,6 +174,28 @@ export default function Home() {
               />
             </div>
           </div>
+          <button className={styles.left}>
+            <Image
+              src="/icons/ui/caret.svg"
+              alt="Github Link"
+              width="35"
+              height="35"
+            />
+          </button>
+          <button className={styles.right}>
+            <Image
+              src="/icons/ui/caret.svg"
+              alt="Github Link"
+              width="35"
+              height="35"
+            />
+          </button>
+        </div>
+
+        <div className={styles.ramblings}>
+          <h2>
+            Ramblings
+          </h2>
         </div>
       </main>
     </div>

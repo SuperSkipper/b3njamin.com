@@ -1,7 +1,27 @@
 .page {
-  min-height: 100svh;
+  min-height: 100vh;
   width: 100vw;
   gap: 0;
+}
+
+.home,
+.about,
+.projects,
+.ramblings,
+.contact {
+  height: 100vh;
+  min-height: 100vh;
+  scroll-snap-align: start;
+  position: relative;
+  h2 {
+    position: absolute;
+    top: 10%;
+    width: fit-content;
+    font-family: var(--font-anonymous-pro), serif;
+    font-size: 50px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
 .main {
@@ -17,8 +37,6 @@
   scrollbar-width: none;
   .home {
     z-index: 1;
-    scroll-snap-align: start;
-    height: 100vh;
     display: grid;
     align-items: center;
     justify-items: center;
@@ -100,19 +118,8 @@
   }
 
   .about {
-    scroll-snap-align: start;
-    min-height: 100vh;
-    height: 100vh;
     padding: 100px;
-    position: relative;
     h2 {
-      position: absolute;
-      top: 10%;
-      width: fit-content;
-      font-family: var(--font-anonymous-pro), serif;
-      font-size: 60px;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
       background-image: -webkit-linear-gradient(0deg,  rgba(11,227,0,1) 0%, rgba(0,71,202,1) 100%);
     }
     .content {
@@ -127,7 +134,7 @@
         font-family: var(--font-montserrat), serif;
         font-weight: normal;
         span {
-          font-size: 40px;
+          font-size: 35px;
         }
         button {
           font-size: 1.5em;
@@ -178,23 +185,12 @@
   }
 
   .projects {
-    height: 100vh;
-    min-height: 100vh;
-    scroll-snap-align: start;
     display: grid;
     grid-template-columns: .15fr 1fr .15fr;
     grid-template-rows: .4fr 1fr .4fr;
-    position: relative;
     h2 {
-      position: absolute;
-      top: 10%;
       left: 100px;
-      width: fit-content;
-      font-family: var(--font-anonymous-pro), serif;
-      font-size: 60px;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-image: -webkit-linear-gradient(0deg,  rgba(227,87,0,1) 0%, rgba(195,202,0,1) 100%);
+      background-image: -webkit-linear-gradient(0deg,  rgba(227,0,197,1) 0%, rgba(195,202,0,1) 100%);
     }
     .content {
       height: 100%;
@@ -237,6 +233,31 @@
           }
         }
       }
+    }
+
+    .left,
+    .right {
+      grid-row: 2;
+      height: 5em;
+      margin-top: auto;
+      margin-bottom: auto;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+    .left {
+      grid-column: 1;
+    }
+    .right {
+      grid-column: 3;
+      transform: rotate(180deg);
+    }
+  }
+
+  .ramblings {
+    h2 {
+      left: 100px;
+      background-image: -webkit-linear-gradient(0deg,  rgba(227,0,197,1) 0%, rgba(0,34,202,1) 100%);
     }
   }
 }
